@@ -1,0 +1,17 @@
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin v-align {
+  @include transform(translateY(-50%));
+  position: relative;
+  top: 50%;
+}

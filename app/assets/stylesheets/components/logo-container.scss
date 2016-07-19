@@ -1,0 +1,12 @@
+.logo-container {
+  @include clearfix;
+  margin-top: 100px;
+  margin-bottom: 70px;
+
+  > .logo {
+    margin: 0 auto;
+    height: 145px;
+    width: 291px;
+    background-image: image-url("logo.svg");
+  }
+}

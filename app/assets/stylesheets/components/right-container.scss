@@ -1,0 +1,23 @@
+.right-container {
+  @include span-columns(4 of 12);
+  @include shift(1);
+  @include clearfix;
+
+  color: #ffffff;
+
+  > .main, > .secondary {
+    font-family: $font-family-body;
+  }
+
+  > .main {
+    margin-top: 0;
+  }
+
+  > .input {
+    width: 100%;
+    color: #ffffff;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+  }
+}

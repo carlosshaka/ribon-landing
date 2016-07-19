@@ -1,0 +1,24 @@
+.background-gradient {
+
+  width: 100vw;
+  height: 100vh;
+
+  // background: linear-gradient(255deg, $color-green, $color-blue, $color-green)
+  background: linear-gradient(255deg, $color-primary, $color-secondary, $color-primary);
+  background-size: 600% 600%;
+  animation: animationColor 40s infinite ease;
+}
+
+@keyframes animationColor {
+  0% {
+    background-position: 0% 64%
+  }
+
+  50% {
+    background-position: 100% 37%
+  }
+
+  100% {
+    background-position: 0% 64%
+  }
+}
