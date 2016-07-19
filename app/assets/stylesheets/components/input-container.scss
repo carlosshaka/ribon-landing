@@ -5,7 +5,7 @@
 
   > .input {
     color: #ffffff;
-    width: 80%;
+    width: 70%;
     padding: 15px;
     border: 0;
     background-color: transparent;
@@ -15,11 +15,17 @@
 
   > .button {
     padding: 15px;
-    width: 20%;
+    width: 30%;
     border: 0;
     background-color: #ffffff;
     display: block;
     float: left;
     color: $color-primary;
+  }
+}
+
+@media screen and (max-height: 1200px) {
+  .input-container {
+    margin-bottom: 50px;
   }
 }

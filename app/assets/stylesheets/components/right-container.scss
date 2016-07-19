@@ -11,11 +11,12 @@
     margin-top: -5px;
   }
 
-  > .input {
-    width: 100%;
-    color: #ffffff;
-    padding: 15px;
-    background-color: transparent;
-    border: 2px solid #ffffff;
+}
+
+@media screen and (max-height: 1200px) {
+  .right-container {
+    > .main {
+      margin-top: 20px;
+    }
   }
 }

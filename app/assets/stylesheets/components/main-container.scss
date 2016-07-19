@@ -8,3 +8,11 @@
     @include span-columns(5 of 12);
   }
 }
+
+@media screen and (max-height: 1200px) {
+  .main-container {
+    > .left-container, > .right-container{
+      @include span-columns(12 of 12);
+    }
+  }
+}
