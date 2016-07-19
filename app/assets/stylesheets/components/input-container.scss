@@ -1,0 +1,25 @@
+.input-container {
+  @include clearfix;
+  width: 100%;
+  border: 1px solid #ffffff;
+
+  > .input {
+    color: #ffffff;
+    width: 80%;
+    padding: 15px;
+    border: 0;
+    background-color: transparent;
+    display: block;
+    float: left;
+  }
+
+  > .button {
+    padding: 15px;
+    width: 20%;
+    border: 0;
+    background-color: #ffffff;
+    display: block;
+    float: left;
+    color: $color-primary;
+  }
+}

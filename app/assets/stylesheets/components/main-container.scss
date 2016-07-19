@@ -1,0 +1,10 @@
+.main-container {
+
+  > .left-container {
+    @include span-columns(7 of 12);
+  }
+
+  > .right-container {
+    @include span-columns(5 of 12);
+  }
+}
