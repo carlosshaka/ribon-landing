@@ -9,7 +9,7 @@
   }
 }
 
-@media screen and (max-height: 1200px) {
+@media screen and (max-width: 980px) {
   .main-container {
     > .left-container, > .right-container{
       @include span-columns(12 of 12);
