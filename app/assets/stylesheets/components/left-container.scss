@@ -1,9 +1,9 @@
 .left-container {
-  
+
   @include clearfix;
 
   iframe {
     width: 100%;
-    height: 50vh;
+    height: calc(100vh - 415px);
   }
 }
