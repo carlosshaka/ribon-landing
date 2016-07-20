@@ -1,8 +1,8 @@
-.background-gradient {
+html {
 
   width: 100vw;
   min-height: 100vh;
-  
+
   background-color: $color-primary;
   // background: linear-gradient(255deg, $color-green, $color-blue, $color-green)
   background: linear-gradient(255deg, $color-primary, $color-secondary, $color-primary);
