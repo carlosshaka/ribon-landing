@@ -2,11 +2,14 @@ $('.js-subscribe').click(function() {
   event.preventDefault();
 
   $.ajax({
+    type: 'POST',
+    data: { contact: { email:  $('.js-input').val() } },
+    url: 'contacts',
     success: function(data) {
-      console.log($('.js-input').val());
+      $('.js-message').addClass('-active');
+      $('.input-container').addClass('-hidden');
     },
     error: function() {
-      console.log('error');
     }
   });
 });

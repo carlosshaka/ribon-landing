@@ -22,6 +22,10 @@
     float: left;
     color: $color-primary;
   }
+
+  &.-hidden {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 980px) {
