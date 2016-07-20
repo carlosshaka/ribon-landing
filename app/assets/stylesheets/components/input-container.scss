@@ -2,10 +2,10 @@
   @include clearfix;
   width: 100%;
   border: 1px solid #ffffff;
-
+  margin-bottom: 20px;
   > .input {
     color: #ffffff;
-    width: 70%;
+    width: 65%;
     padding: 15px;
     border: 0;
     background-color: transparent;
@@ -15,7 +15,7 @@
 
   > .button {
     padding: 15px;
-    width: 30%;
+    width: 35%;
     border: 0;
     background-color: #ffffff;
     display: block;
@@ -25,11 +25,5 @@
 
   &.-hidden {
     display: none;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .input-container {
-    margin-bottom: 50px;
   }
 }

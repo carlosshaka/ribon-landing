@@ -1,0 +1,28 @@
+.social-medias {
+  @include clearfix;
+
+  > .facebook, > .twitter {
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: right;
+  }
+
+  > .facebook {
+    background-image: image-url('facebook-icon.svg');
+  }
+
+  > .twitter {
+    margin-top: 2px;
+    margin-left: 10px;
+    background-image: image-url('twitter-icon.svg');
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .social-medias {
+    margin-bottom: 50px;
+  }
+}
