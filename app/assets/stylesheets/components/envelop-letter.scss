@@ -1,0 +1,13 @@
+.envelop-letter {
+  background-color: #ffffff;
+  padding-top: 80px;
+  position: relative;
+
+  z-index: 2;
+  
+  .letter-header, .letter-body {
+    @include span-columns(4 of 6);
+    @include shift(1 of 6);
+  }
+
+}
