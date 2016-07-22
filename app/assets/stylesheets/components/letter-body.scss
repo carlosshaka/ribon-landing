@@ -1,0 +1,7 @@
+.letter-body {
+  p {
+    &:last-child {
+      padding-bottom: 200px;
+    }
+  }
+}
