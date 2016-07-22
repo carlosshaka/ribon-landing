@@ -1,7 +1,9 @@
 .letter-body {
   p {
+    font-weight: 300;
+
     &:last-child {
-      padding-bottom: 200px;
+      padding-bottom: 300px;
     }
   }
 }

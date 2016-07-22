@@ -1,6 +1,6 @@
 body {
-  $font-size-body: 1em;
-  $font-family-body: "Open Sans", serif;
+  font-size: $font-size-body;
+  font-family: $font-family-body;
 }
 
 h1,
@@ -9,5 +9,5 @@ h3,
 h4,
 h5,
 h6 {
-  $font-family-headings: "Montserrat", Helvetica, serif;
+  font-family: $font-family-headings;
 }

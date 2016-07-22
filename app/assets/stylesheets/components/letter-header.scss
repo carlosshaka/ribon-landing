@@ -1,0 +1,15 @@
+.letter-header {
+  h4 {
+    font-weight: 300;
+    float: left;
+    margin-top: 50px;
+  }
+
+  .logo {
+    background-repeat: no-repeat;
+    background-image: image-url('logo-gray.svg');
+    height: 70px;
+    width: 140px;
+    float: right;
+  }
+}
