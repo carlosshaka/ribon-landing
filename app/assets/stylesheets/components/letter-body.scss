@@ -1,9 +1,48 @@
 .letter-body {
-  p {
+  .text {
     font-weight: 300;
+  }
 
-    &:last-child {
-      padding-bottom: 300px;
+  .signature {
+    font-weight: 300;
+    margin: 5px 0;
+  }
+
+  .btn {
+    background-color: $color-base;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 25vw;
+    width: 100%;
+    border: 0;
+    z-index: 5;
+
+    &.-hidden {
+      display: none;
+    }
+  }
+
+  .input-container {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 25vw;
+    border: 3px solid $color-base;
+
+    .input {
+      padding: 10px;
+      color: $color-base;
+    }
+
+    .button {
+      background-color: $color-base;
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    &.-active {
+      display: block;
     }
   }
 }

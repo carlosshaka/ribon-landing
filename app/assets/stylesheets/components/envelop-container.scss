@@ -1,5 +1,5 @@
 .envelop-container {
-
+  @include clearfix;
 
   .front, .back {
     @include span-columns(8);
