@@ -24,6 +24,18 @@
     }
   }
 
+  .message {
+    margin-bottom: 25vw;
+    color: $color-base;
+    text-align: center;
+    display: none;
+
+    &.-active {
+      display: block;
+    }
+
+  }
+
   .input-container {
     display: none;
     margin-top: 20px;
@@ -39,6 +51,7 @@
       background-color: $color-base;
       color: #ffffff;
       padding: 10px;
+      cursor: pointer;
     }
 
     &.-active {
@@ -49,7 +62,7 @@
 
 @media(max-width: 980px){
   .letter-body {
-    .btn, .input-container {
+    .btn, .input-container, .message {
       margin-bottom: 30vw;
     }
   }

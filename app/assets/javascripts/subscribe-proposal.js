@@ -9,9 +9,10 @@ $('.js-subscribe-proposal').click(function() {
   $.ajax({
     type: 'POST',
     data: { client: { email:  $('.js-input-proposal').val() } },
-    url: 'clients',
+    url: '/clients',
     success: function(data) {
       $('.js-message').addClass('-active');
+      $('.input-container').removeClass('-active');
       $('.input-container').addClass('-hidden');
     },
     error: function() {
