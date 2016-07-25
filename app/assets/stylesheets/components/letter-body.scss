@@ -46,3 +46,11 @@
     }
   }
 }
+
+@media(max-width: 980px){
+  .letter-body {
+    .btn, .input-container {
+      margin-bottom: 30vw;
+    }
+  }
+}
