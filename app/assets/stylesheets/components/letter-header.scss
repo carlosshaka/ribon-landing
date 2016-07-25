@@ -13,3 +13,11 @@
     float: right;
   }
 }
+@media(max-width: 980px){
+  .letter-header {
+    .logo {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+}

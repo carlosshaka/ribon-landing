@@ -28,3 +28,17 @@
 
   }
 }
+
+@media(max-width: 980px){
+  .envelop-container {
+    .front, .back {
+      width: 100%;
+      margin-left: 0;
+      bottom: 0;
+    }
+
+    .back {
+      bottom: 11vw;
+    }
+  }
+}
