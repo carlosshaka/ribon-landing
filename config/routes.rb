@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :letters
+  resources :texts
   resources :clients
   resources :contacts
   get 'proposal', to: 'home#proposal'

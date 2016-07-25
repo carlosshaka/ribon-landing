@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160723140443) do
+ActiveRecord::Schema.define(version: 20160723231334) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,4 +27,21 @@ ActiveRecord::Schema.define(version: 20160723140443) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "letters", force: :cascade do |t|
+    t.string   "title"
+    t.string   "logo"
+    t.integer  "text_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.json     "body"
+    t.index ["text_id"], name: "index_letters_on_text_id", using: :btree
+  end
+
+  create_table "texts", force: :cascade do |t|
+    t.string   "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "letters", "texts"
 end
